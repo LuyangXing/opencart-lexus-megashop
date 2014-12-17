@@ -38,7 +38,7 @@
 								<?php } ?>
 							</td>
 						</tr>
-						<tr>
+						<!--<tr>
 							<td>
 								<span class="required">*</span> 
 								<?php echo $entry_lastname; ?>
@@ -49,7 +49,7 @@
 								<span class="error"><?php echo $error_lastname; ?></span>
 								<?php } ?>
 							</td>
-						</tr>
+						</tr> by Leon-->
 						<tr>
 							<td>
 								<span class="required">*</span> 
@@ -62,7 +62,7 @@
 								<?php } ?>
 							</td>
 						</tr>
-						<tr>
+						<!--<tr>
 							<td>
 								<span class="required">*</span> 
 								<?php echo $entry_telephone; ?>
@@ -77,11 +77,11 @@
 						<tr>
 							<td><?php echo $entry_fax; ?></td>
 							<td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>
-						</tr>
+						</tr> by Leon-->
 					</table>
 				</div>
 			
-				<h2><?php echo $text_your_address; ?></h2>
+				<!--<h2><?php echo $text_your_address; ?></h2>
 				<div class="content">
 					<table class="form table-condensed">
 						<tr>
@@ -199,8 +199,7 @@
 							</td>
 						</tr>
 					</table>
-				</div>
-			
+				</div> by Leon-->			
 			
 				<h2><?php echo $text_your_password; ?></h2>
 				<div class="content">

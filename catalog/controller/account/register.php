@@ -183,11 +183,11 @@ class ControllerAccountRegister extends Controller {
 			$this->data['firstname'] = '';
 		}
 
-		if (isset($this->request->post['lastname'])) {
+		/*if (isset($this->request->post['lastname'])) {
     		$this->data['lastname'] = $this->request->post['lastname'];
 		} else {
 			$this->data['lastname'] = '';
-		}
+		} by Leon*/
 		
 		if (isset($this->request->post['email'])) {
     		$this->data['email'] = $this->request->post['email'];
@@ -195,7 +195,7 @@ class ControllerAccountRegister extends Controller {
 			$this->data['email'] = '';
 		}
 		
-		if (isset($this->request->post['telephone'])) {
+		/*if (isset($this->request->post['telephone'])) {
     		$this->data['telephone'] = $this->request->post['telephone'];
 		} else {
 			$this->data['telephone'] = '';
@@ -291,7 +291,7 @@ class ControllerAccountRegister extends Controller {
 		
 		$this->load->model('localisation/country');
 		
-    	$this->data['countries'] = $this->model_localisation_country->getCountries();
+    	$this->data['countries'] = $this->model_localisation_country->getCountries(); by Leon*/
 		
 		if (isset($this->request->post['password'])) {
     		$this->data['password'] = $this->request->post['password'];
@@ -354,9 +354,9 @@ class ControllerAccountRegister extends Controller {
       		$this->error['firstname'] = $this->language->get('error_firstname');
     	}
 
-    	if ((utf8_strlen($this->request->post['lastname']) < 1) || (utf8_strlen($this->request->post['lastname']) > 32)) {
+    	/*if ((utf8_strlen($this->request->post['lastname']) < 1) || (utf8_strlen($this->request->post['lastname']) > 32)) {
       		$this->error['lastname'] = $this->language->get('error_lastname');
-    	}
+    	} by Leon*/
 
     	if ((utf8_strlen($this->request->post['email']) > 96) || !preg_match('/^[^\@]+@.*\.[a-z]{2,6}$/i', $this->request->post['email'])) {
       		$this->error['email'] = $this->language->get('error_email');
@@ -366,7 +366,7 @@ class ControllerAccountRegister extends Controller {
       		$this->error['warning'] = $this->language->get('error_exists');
     	}
 		
-    	if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
+    	/*if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
       		$this->error['telephone'] = $this->language->get('error_telephone');
     	}
 		
@@ -424,7 +424,7 @@ class ControllerAccountRegister extends Controller {
 		
     	if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '') {
       		$this->error['zone'] = $this->language->get('error_zone');
-    	}
+    	} by Leon*/
 
     	if ((utf8_strlen($this->request->post['password']) < 4) || (utf8_strlen($this->request->post['password']) > 20)) {
       		$this->error['password'] = $this->language->get('error_password');
