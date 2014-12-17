@@ -212,8 +212,8 @@
 		<?php echo $themeConfig['copyright'];?>
 	<?php } else { ?>
 		<?php echo $powered; ?>. 
-	<?php } ?>
-	Designed by <a href="http://www.themelexus.com" title="pavethemes - opencart themes clubs" target="_blank">ThemeLexus</a></div>
+	<?php } ?>.
+	<!-- Designed by <a href="http://www.themelexus.com" title="pavethemes - opencart themes clubs" target="_blank">ThemeLexus</a> byleon--></div>
 	<div class="paypal pull-right"><a href="#"><img src="image/data/paypal.png" alt="payment" /></a></div></div></div>
 	
 </footer>
