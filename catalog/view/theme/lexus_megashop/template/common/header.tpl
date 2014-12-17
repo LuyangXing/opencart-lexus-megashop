@@ -101,7 +101,7 @@ $vmegamenu = $helper->renderModule( 'module/pavverticalmenu' );
 			<?php echo implode("\r\n",$css);?>
 			</style>
 			<?php } else { ?>			
-			<link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic,800,700italic,700,600italic,600,400italic,400,300italic,300' rel='stylesheet' type='text/css'>
+			<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic,800,700italic,700,600italic,600,400italic,400,300italic,300' rel='stylesheet' type='text/css'> by leon-->
 			<?php } ?>
 			<?php foreach ($styles as $style) { ?>
 			<link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
