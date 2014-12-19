@@ -38,7 +38,7 @@
 								<?php } ?>
 							</td>
 						</tr>
-						<tr>
+						<tr style='display:none'>
 							<td>
 								<span class="required">*</span> 
 								<?php echo $entry_lastname; ?>
@@ -62,7 +62,7 @@
 								<?php } ?>
 							</td>
 						</tr>
-						<tr>
+						<tr style='display:none'>
 							<td>
 								<span class="required">*</span> 
 								<?php echo $entry_telephone; ?>
@@ -74,15 +74,15 @@
 								<?php } ?>
 							</td>
 						</tr>
-						<tr>
+						<tr style='display:none'>
 							<td><?php echo $entry_fax; ?></td>
 							<td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>
 						</tr>
 					</table>
 				</div>
 			
-				<h2><?php echo $text_your_address; ?></h2>
-				<div class="content">
+				<h2 style='display:none'><?php echo $text_your_address; ?></h2>
+				<div class="content" style='display:none'>
 					<table class="form table-condensed">
 						<tr>
 							<td><?php echo $entry_company; ?></td>
